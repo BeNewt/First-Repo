@@ -199,6 +199,7 @@ while count < len(listOfPairs):
     fname, town = listOfPairs[count].split(": ")
     print("first name is: " + fname + "\n town is: " + town)
     count += 1
+
 # findNeedle
 def findNeedle(needle, hayStack):
     hayStack = hayStack.strip().lower()
@@ -217,6 +218,7 @@ def findNeedle(needle, hayStack):
             return True
         psn = hayStack.find(needle, psn + 1);
     return False
+
 # goodbye
 if count == 7:
         s = input('Would you like to chat more?\n')
@@ -226,48 +228,26 @@ if count == 7:
         else:
             print('Good bye')
 
-# chatBox_rev3
-# This code was written by J. ODonnell
-# On 2/13/2018
-# modified by Student Name
+# Git -- day 1
 
-# import random 
+# Set Config. Attributes
+# git config --global user.name ‘BethNewton’
+# git config --global user.email ‘bethnewton11.17@gmail.com’
 
+# Naviagate to your Folder
+# cd c:		will take you to the root of the c: drive
+# ls -la   	will display your directory
 
-# catch for empty string input
-##########################################
-# definition for find needle goes here 
+# Create a New Repo
+# git init repo
 
+# Add a Commit
+# git add <filename>
+# git commit -m ‘message’
 
-##########################################
-
-default_greeting = "Hello, let's talk.\n"
-
-s = input(default_greeting)
-count = 0
-generic_responses = ["Hmmmmm", "Interesting, tell me more.", "You don't say?"]
-while(count < 7):
-    # if findNeedle('mother', s):
-    if s.find('mother') >= 0:
-        s = input("did you say 'mother' ?\n")
-    elif s.find('father') >= 0:
-        s = input("do you have a large family?\n")
-    elif s.find('sister') >= 0:
-        s = input("do you have a large family?\n")
-    elif s.find('brother') >= 0:
-        s = input("do you have a large family?\n")
-    else:
-        #s = input(generic_responses[random.randint(0, 2)] +"\n")
-        
-        if count_generic_response < 2:
-            count_generic_response += 1
-        else:
-            count_generic_response = 0
-        s = input(generic_responses[count_generic_response] +"\n")
-        
-    count += 1
-####################################
-
-# put code here for the good-bye 
+# Git -- day 2
+# git add filename
+# git commit -m 'message'
+# git pish origin master
 
 
